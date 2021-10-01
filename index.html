@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ✨MENU✨ </title>
+	<style>
+			body{
+		background-image: url(menuu.jfif);
+		background-size: cover;
+	}
+	.cua{
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			width: 80%;
+			height: 80%;
+			background: white;
+			border: black 5px solid;
+
+	}
+	.majo{
+			position: absolute;
+			font-family: sw;
+			top: 14%;
+			left: 10%;
+			font-size: 100%;
+			height: 0%;
+			color: #AB01D8 ;
+		}
+			@font-face{
+	font-family: suu;
+	src: url(su.ttf);
+}
+		@font-face{
+	font-family: sw;
+	src: url(swe.otf);
+}
+		@font-face{
+	font-family: mii;
+	src: url(mil.ttf);
+}
+@font-face{
+	font-family: type;
+	src: url(tip.otf);
+}
+	@font-face{
+	font-family: sunn;
+	src: url(sun.ttf);
+}
+
+		.majo1{
+			position: absolute;
+			font-family: type;
+			top: 22%;
+			left: 10%;
+			font-size: 90%;
+			color: black;
+			width: 15%;
+			height: 7%;
+		}
+		.majo2{
+			position: absolute;
+			font-family: sw;
+			top: 34%;
+			left: 10%;
+			font-size: 100%;
+			height: 0%;
+			color:#AB01D8  ;
+		}
+		.majo3{
+			position: absolute;
+			font-family: type;
+			top: 42%;
+			left: 10%;
+			font-size: 90%;
+			color: black;
+			width: 15%;
+			height: 7%;
+			
+		}
+		.ingre{
+			position: absolute;
+			font-family: mii;
+			font-size: 150%;
+			top: 60%;
+			left: 10%;
+			width: 10%;
+			height: 10%;
+			background: #01D87A ;
+			color: black;
+			border: black 2px solid;
+		}
+		.majo6{
+			position: absolute;
+			font-family: sunn;
+			font-size: 220%;
+			top: 13%;
+			right: 35%;
+			width: 15%;
+			height: 0%;
+			color: black;
+		}
+			.majo7{
+			position: absolute;
+			font-family: type;
+			font-size: 200%;
+			top: 30%;
+			right: 23%;
+			width: 40%;
+			height: 56%;
+			background: #5EA0FE ;
+			color: black;
+			border: black 5px solid;
+		}
+		.atras{
+			position: absolute;
+			font-family: suu;
+			top: 10%;
+			right: 2%;
+			width: 10%;
+			height: 10%;
+			background: salmon;
+			border: black 5px solid;
+			border-radius: 100px;
+		}
+		.adelante{
+			position: absolute;
+			font-family: suu;
+			top: 30%;
+			right: 2%;
+			width: 10%;
+			height: 10%;
+			background: #95FF90;
+			border: black 5px solid;
+			border-radius: 100px;
+		}
+
+					
+
+	</style>
+</head>
+<body>
+	<div class="cua"></div>
+	<from>
+	
+	<label class="majo">Ingrese el nombre</label>
+	<input class="majo1" type="text" id="cata" placeholder="name">
+	<label class="majo2">Ingrese el valor</label>
+	<input class="majo3" type="text" id="cata1" placeholder="money">
+
+	</from>
+
+	<div class="ingre" onclick="ing()"><center>Ingresar</center></div>
+	<div class="majo6" id="cata3"> ...Menu... </div>
+	<div class="majo7" id="cata4"></div>
+	<div class="atras" id="at"><center> <a href="file:///D:/Documents/4periodod/entrega2p/index.html">Inicio</center></div>
+	<div class="adelante" id="ad"><center><a href="file:///D:/Documents/4periodod/entrega2p/index2.html">Juego</center></div>
+
+
+	<script>
+		function ing()
+	{
+	           s=(cata.value);
+              	y=Number(cata1.value);
+       
+              	
+              	n=cata4.innerHTML;
+			
+			o=s+" "+y;
+			n=cata4.innerHTML+o;
+			cata4.innerHTML=n+"<br>";
+
+		        
+	}
+	</script>
+
+
+</body>
+</html>
